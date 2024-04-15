@@ -125,25 +125,6 @@
 
 
 
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Novel view synthesis aims to generate new view images of a given view image collection. Recent attempts address this problem relying on 3D geometry priors (e.g., shapes, sizes, and positions) learned from multi-view images. However, such methods encounter the following limitations: 1) they require a set of multi-view images as training data for a specific scene (e.g., face, car or chair), which is often unavailable in many real-world scenarios; 2) they fail to extract the geometry priors from single-view images due to the lack of multi-view supervision. In this paper, we propose a Geometry-enhanced NeRF (G-NeRF), which seeks to enhance the geometry priors by a geometry-guided multi-view synthesis approach, followed by a depth-aware training. In the synthesis process, inspired that existing 3D GAN models can unconditionally synthesize high-fidelity multi-view images, we seek to adopt off-the-shelf 3D GAN models, such as EG3D, as a free source to provide geometry priors through synthesizing multi-view data. Simultaneously, to further improve the geometry quality of the synthetic data, we introduce a truncation method to effectively sample latent codes within 3D GAN models. To tackle the absence of multi-view supervision for single-view images, we design the depth-aware training approach, incorporating a depth-aware discriminator to guide geometry priors through depth maps. Experiments demonstrate the effectiveness of our method in terms of both qualitative and quantitative results.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
 
 <section class="section hero is-small">
   <div class="container is-max-desktop">
@@ -151,7 +132,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overal Pipeline of Our G-NeRF</h2>
         <div class="content has-text-justified">
-          <img src="static\\images\\overallarchitecture.png" alt="MY ALT TEXT"/>
+          <img src="static\\images\\overallarchitecture.png" alt="MY ALT TEXT" style="width: 150%; height: 150%;">
         </div>
       </div>
     </div>
@@ -212,6 +193,66 @@
           </div>
         </div>
       </div>
+      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on FFHQ</h3>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="videos/video_2.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on CelebAMask-HQ</h3>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="videos/video_3.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on AFHQ-Cats</h3>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="videos/video_4.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on SRN Cars</h3>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="videos/video_5.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
+        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on SRN Chairs</h3>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="videos/video_6.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -247,13 +288,13 @@
     author={Huang, Zixiong and Chen, Qi and Sun, Libo and Yang, Yifan and Wang, Naizhou and Tan, Mingkui and Wu, Qi},
     journal={arXiv preprint arXiv:2404.07474},
     year={2024}
-    }
-        @inproceedings{huang2024g,
-          author = {Zixiong, Huang and Qi, Chen and Libo, Sun and Yifan, Yang and Naizhou, Wang and Mingkui, Tan and Qi, Wu},
-          title = {G-NeRF: Geometry-enhanced Novel View Synthesis from Single-View Images},
-          booktitle = {IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)},
-          year = {2024}
-        }</code></pre>
+}
+@inproceedings{huang2024g,
+    author={Zixiong, Huang and Qi, Chen and Libo, Sun and Yifan, Yang and Naizhou, Wang and Mingkui, Tan and Qi, Wu},
+    title={G-NeRF: Geometry-enhanced Novel View Synthesis from Single-View Images},
+    booktitle={IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)},
+    year={2024}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
