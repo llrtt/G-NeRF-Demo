@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="google-site-verification" content="zAE6ru3p83t1ON6hRSxRl8ifKRjJS0TSifEZ_rslMyc" />
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -27,15 +28,13 @@
 
   <title>G-NeRF: Geometry-enhanced Novel View Synthesis from Single-View Images</title>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,8 +43,56 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
-  
+
+  <style>
+    .overall-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    .overall-img-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      #overall-img {
+        width: 1000px;
+        min-width: 60vw;
+        /* min-width: 100vw; */
+      }
+
+    }
+
+    .video-session {
+
+      margin-top: 30px;
+      text-align: center;
+
+      .videos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+        .video {
+          width: 40%;
+          min-width: 300px;
+          margin: 10px 20px;
+          text-align: center;
+
+          .title {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  </style>
+
 </head>
+
 <body>
 
 
@@ -54,51 +101,58 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">G-NeRF: Geometry-enhanced Novel View Synthesis from Single-View Images</h1>
+            <h1 class="title is-1 publication-title">G-NeRF: Geometry-enhanced Novel View Synthesis from Single-View
+              Images</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://scholar.google.com.hk/citations?user=xvPL3HIAAAAJ&hl=zh-CN" target="_blank">Zixiong Huang</a><sup>1,3*</sup>,</span>
-                <span class="author-block">
-                  <a href="https://scholar.google.com.hk/citations?user=OgKU77kAAAAJ&hl=zh-CN" target="_blank">Qi Chen</a><sup>2*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Libo Sun</a><sup>2</sup>,</span>
-                    <span class="author-block">
-                      <a href="https://scholar.google.com.hk/citations?user=veb6adUAAAAJ&hl=zh-CN" target="_blank">Yifan Yang</a><sup>1</sup>,</span>
-                      <span class="author-block">
-                        <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Naizhou Wang</a><sup>3</sup>,</span>
-                        <span class="author-block">
-                          <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=EVsoTGkAAAAJ" target="_blank">Mingkui Tan</a><sup>1, 3, 4&#8224;</sup>,</span>
-                          <span class="author-block">
-                            <a href="https://scholar.google.co.uk/citations?user=aKXe1FEAAAAJ&hl=en" target="_blank">Qi Wu</a><sup>2</sup>
-                  </span>
-                  </div>
+                <a href="https://scholar.google.com.hk/citations?user=xvPL3HIAAAAJ&hl=zh-CN" target="_blank">Zixiong
+                  Huang</a><sup>1,3*</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=OgKU77kAAAAJ&hl=zh-CN" target="_blank">Qi
+                  Chen</a><sup>2*</sup>,</span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Libo Sun</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=veb6adUAAAAJ&hl=zh-CN" target="_blank">Yifan
+                  Yang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Naizhou Wang</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=EVsoTGkAAAAJ" target="_blank">Mingkui
+                  Tan</a><sup>1, 3, 4&#8224;</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.co.uk/citations?user=aKXe1FEAAAAJ&hl=en" target="_blank">Qi
+                  Wu</a><sup>2</sup>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>South China University of Technology, </span>
-                    <span class="author-block"><sup>2</sup>The University of Adelaide,</span>
-                    <span class="author-block"><sup>3</sup>Guangzhou Shiyuan Electronics Co., Ltdc, </span>
-                    <span class="author-block"><sup>4</sup>Pazhou Lab</span><br>
-                      CVPR 2024</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution, <sup>&#8224;</sup>Indicates Corresponding Author</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>South China University of Technology, </span>
+              <span class="author-block"><sup>2</sup>The University of Adelaide,</span>
+              <span class="author-block"><sup>3</sup>Guangzhou Shiyuan Electronics Co., Ltdc, </span>
+              <span class="author-block"><sup>4</sup>Pazhou Lab</span><br>
+              CVPR 2024</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution, <sup>&#8224;</sup>Indicates
+                  Corresponding Author</small></span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/abs/2404.07474" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2404.07474" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/llrtt/G-NeRF" target="_blank"
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/llrtt/G-NeRF" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -110,182 +164,88 @@
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2404.07474" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-
-<section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Overall Pipeline of Our G-NeRF</h2>
-        <div class="content has-text-justified">
-          <img src="static\\images\\overallarchitecture.png" alt="MY ALT TEXT" style="width: 150%; height: 150%;">
-        </div>
+  <section class="section">
+    <div class="overall-container">
+      <h2 class="title is-3">Overall Pipeline of Our G-NeRF</h2>
+      <div class="overall-img-wrapper">
+        <img src="static\\images\\overallarchitecture.png" alt="MY ALT TEXT" id="overall-img">
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+  <!-- Youtube video -->
+  <section class="video-session">
+    <div class="title is-3">
+      Various Generated Videos
     </div>
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Various Generated Videos</h2>
-      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
-        <h3 class="title is-4"> Qualitative Results on FFHQ and CelebAMask-HQ</h3>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="videos/video_1.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
-        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on FFHQ</h3>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="videos/video_2.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+    <div class="videos">
+      <div class="video">
+        <h2 class="title">Qualitative Results on FFHQ and CelebAMask-HQ</h2>
+        <div class="publication-video">
+          <iframe src="videos/video_1.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
 
-      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
-        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on CelebAMask-HQ</h3>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="videos/video_3.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+      <div class="video">
+        <h2 class="title">Qualitative Comparison with Pix2NeRF on FFHQ</h2>
+        <div class="publication-video">
+          <iframe src="videos/video_2.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
 
-      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
-        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on AFHQ-Cats</h3>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="videos/video_4.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+      <div class="video">
+        <h2 class="title">Qualitative Comparison with Pix2NeRF on CelebAMask-HQ</h2>
+        <div class="publication-video">
+          <iframe src="videos/video_3.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
 
-      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
-        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on SRN Cars</h3>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="videos/video_5.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+      <div class="video">
+        <h2 class="title">Qualitative Comparison with Pix2NeRF on AFHQ-Cats</h2>
+        <div class="publication-video">
+          <iframe src="videos/video_4.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
 
-      <div style="display: flex; justify-content: center;align-items: center; height: 80px;">
-        <h3 class="title is-4"> Qualitative Comparison with Pix2NeRF on SRN Chairs</h3>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="videos/video_6.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+      <div class="video">
+        <h2 class="title">Qualitative Comparison with Pix2NeRF on SRN Cars</h2>
+        <div class="publication-video">
+          <iframe src="videos/video_5.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
+      <div class="video">
+        <h2 class="title">Qualitative Comparison with Pix2NeRF on SRN Chairs</h2>
+        <div class="publication-video">
+          <iframe src="videos/video_6.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+
 
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
 
-
-
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{huang2024g,
+      <pre>
+        <code>@article{huang2024g,
     title={G-NeRF: Geometry-enhanced Novel View Synthesis from Single-View Images},
     author={Huang, Zixiong and Chen, Qi and Sun, Libo and Yang, Yifan and Wang, Naizhou and Tan, Mingkui and Wu, Qi},
     journal={arXiv preprint arXiv:2404.07474},
@@ -296,35 +256,12 @@
     title={G-NeRF: Geometry-enhanced Novel View Synthesis from Single-View Images},
     booktitle={IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)},
     year={2024}
-}</code></pre>
+}</code>
+</pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
 
 
-  <!-- <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+</body>
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</html>
