@@ -245,7 +245,15 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre>
-        <code>@article{huang2024g,
+        <code id="bibtex"></code>
+</pre>
+    </div>
+  </section>
+
+<script>
+  const code = document.getElementById("bibtex");
+  code.innerText = `
+@article{huang2024g,
     title={G-NeRF: Geometry-enhanced Novel View Synthesis from Single-View Images},
     author={Huang, Zixiong and Chen, Qi and Sun, Libo and Yang, Yifan and Wang, Naizhou and Tan, Mingkui and Wu, Qi},
     journal={arXiv preprint arXiv:2404.07474},
@@ -256,12 +264,8 @@
     title={G-NeRF: Geometry-enhanced Novel View Synthesis from Single-View Images},
     booktitle={IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)},
     year={2024}
-}</code>
-</pre>
-    </div>
-  </section>
-
-
+}`;
+</script>
 </body>
 
 </html>
